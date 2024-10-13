@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Here I make sure the window scales according to the viewport size -->
+  <!-- OBS!!!! All of this code is meant to viewed in mobile version browser. It was specifically optimized for 800x360 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>Felix N. Llambias</title>
+
+  <!-- Here I link the relevant CSS sheet -->
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+<header style="background-color: darkslateblue">
+
+  <!-- Button to swap between dark/lightmode -->
+  <div class="divToggle">
+    <button class="theme-toggle">
+      <img class="sun-icon" src="https://www.iconpacks.net/icons/2/free-sun-icon-3337-thumb.png" alt="SunPNG">
+      <img class="moon-icon" src="https://static-00.iconduck.com/assets.00/moon-icon-512x512-fm9crgpt.png" alt="MoonPNG">
+    </button>
+  </div>
+
+  <!-- This is the profile picture in the header -->
+  <div class = Pfp_Div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg">
+  </div>
+
+  <!-- My name in the header-->
+  <div class="Header_Name">
+    <p style="color: white"><strong>Felix N. Llambias</strong></p>
+  </div
+
+  <!-- My current occupation, I am a student @Kea at the time of writing this; 07/09/2024 -->
+  <div class="Header_Occupation">
+    <p style="color: white">Student at <a style="color: mediumaquamarine"  href="https://kea.dk/">Kea</a></p>
+  </div>
+
+  <!-- List of methods to contact me in the header -->
+  <div class="Header_Communication_List">
+    <ul class="Header_Communication_List_ul">
+
+      <li>
+        <img src="https://t4.ftcdn.net/jpg/08/32/05/55/360_F_832055532_EdwWW9MepoqXAJxG7CqvTpFbSJwJmHOm.jpg">
+        <p style="color: white">Fllambias@hotmail.com</p>
+      </li>
+
+      <li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-2McQ6TDHsuKFyqygMsTb3yPUfri29Sv4wQ&s">
+        <p style="color: white">potionshop (Potion Shop)</p>
+      </li>
+
+      <li>
+        <img src="https://t4.ftcdn.net/jpg/00/96/28/73/360_F_96287340_NzlYjKGOif20pVZPMi7RxDA3sqxKc0Zp.jpg">
+        <p style="color: white">+45 27246066</p>
+      </li>
+
+      <li>
+        <img src="https://as2.ftcdn.net/v2/jpg/02/50/30/59/500_F_250305943_sDC6la1N1fDl3bLgfLxOkQwItIodsdMb.jpg">
+        <a class="Github_Link" style="color: white" href="https://github.com/fele2000">github.com/fele2000</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main class='main-content'>
+
+  <!-- Title 1-->
+  <div class="Career_Summary">
+    <p><strong>Career Summary</strong></p>
+
+    <!-- The horizontal cyan Line dividing the title from the main text -->
+    <hr style="color: mediumaquamarine;">
+
+    <!-- Main text pertaining to this title -->
+    <div>
+      <p class="Career_Description">Insert Career Description</p>
+    </div>
+  </div>
+
+  <!-- Title 2 -->
+  <div class="Experience">
+    <p><strong>Experience</strong></p>
+
+    <!-- Another Horizontal line in the same style -->
+    <hr style="color: mediumaquamarine;">
+
+    <!-- List over past experiences, ideally I would have a vertical line through the bullet points, making it look like a timeline -->
+    <ul class="Experience_Description">
+      <li>
+        <p>Latest Experience</p>
+        <!-- The corresponding employer to this experience [I cant make it work, in css]-->
+        <!-- <div>
+          <p>Employer</p>
+        </div> -->
+      </li>
+
+      <li>
+        <p>2nd lastest experience</p>
+      </li>
+
+      <li>
+        <p>3rd latest experience</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="Language">
+    <p><strong>Language</strong></p>
+
+    <hr style="color: mediumaquamarine">
+
+    <div class="Language_List">
+      <ul class="Language_List_ul">
+        <li>
+          <p><strong>Danish</strong><span style="font-size: 1.08rem;"> (Native)</span></p>
+        </li>
+
+        <li>
+          <p><strong>English</strong><span style="font-size: 1.08rem;"> (Fluent)</span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="mainJS.js"></script>
+</main>
+</body>
+</html>

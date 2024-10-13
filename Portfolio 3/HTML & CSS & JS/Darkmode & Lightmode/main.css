@@ -1,0 +1,154 @@
+/* Styling for the button and the images within */
+.divToggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.theme-toggle {
+    background-color: inherit;
+    border: none;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.theme-toggle img {
+    width: 25px;
+}
+
+/* Which icon is visible in the light mode */
+.sun-icon {
+    display: inline-block;
+}
+
+.moon-icon {
+    display: none;
+    /* The image is originally black, so I make it the opposite */
+    filter: invert(100%);
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Which icon is visible in the dark mode */
+.dark-mode .sun-icon {
+    display: none;
+}
+
+.dark-mode .moon-icon {
+    display: inline-block;
+}
+
+
+/* The CSS connected to the text ''Felix N. Llambias'' in the header
+Here I make sure the text has a scaleable size variant called rem. vw and vh would probably be more efficient though */
+.Header_Name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+/* CSS connected to the ''Student at KEA'' text in the header, KEA being a link in that text. I use height to space out
+ the text in the header, making an 'invisible' box that takes up space. Alternatively I could have used padding CSS*/
+.Header_Occupation{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    height: 3rem;
+}
+
+/* CSS to make sure the text is pushed more towards to middle, to make it look better aesthetically */
+.Header_Occupation p{
+    margin-left: 1rem;
+}
+
+/* CSS to move around my profile picture in the header, which I have placed inside of a div, hence to name */
+.Pfp_Div {
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS to change to size of my profile picture. the width is good for mobile browser, but should be changed to
+ a scaleable size like rem of vw for PC screens */
+.Pfp_Div img {
+    width: 100px;
+
+}
+
+/* CSS to align the text and the images contained within the li tags, height to create space between the text */
+.Header_Communication_List ul li {
+    align-items: center;
+    display: flex;
+    height: 2rem;
+}
+
+/* CSS to make sure the text is to the left of the images and not under them */
+.Header_Communication_List ul li p {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+/* CSS to change the default white background color of the images so it matches the current background color of
+  whatever object they are hovering over. Furthermore I added the float to the images would stay to the left */
+.Header_Communication_List ul li img{
+    width: 1.5rem;
+    mix-blend-mode: multiply;
+    float: left;
+}
+
+/* CSS to remove the common line under the text associated with links */
+.Github_Link{
+    text-decoration: none;
+    margin-left: 0.44rem;
+}
+
+/* CSS to remove the bullet points of this specific list, as I do want them in another list */
+.Header_Communication_List_ul{
+    list-style: none;
+}
+
+/* CSS to make sure the main stuff being shown on screen is kept to middle, this is to make the experience
+ the best as possible for mobile viewports */
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+/* CSS to make the spacing look pleasing, and font size slightly smaller */
+.Career_Description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* CSS to reduce font size */
+.Experience_Description{
+    font-size: 1.2rem;
+
+}
+
+/* CSS to reduce font size */
+.Language_List_ul{
+    font-size: 1.2rem;
+}
+
+
+/* My attempt to make the Employer text go in the rop right corner, right under 'Latest Experience'
+.Experience ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.Experience ul li div {
+    display: flex;
+    align-items: flex-start;
+}
+*/
